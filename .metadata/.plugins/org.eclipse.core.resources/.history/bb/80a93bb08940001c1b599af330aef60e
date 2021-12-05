@@ -1,0 +1,16 @@
+package com.sample1;
+
+public class Operations {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a=5,b=8,c=6;
+		int total;
+		total = a+b*c;
+		System.out.println("The Total Value is : "+total);
+		
+		
+
+	}
+
+}

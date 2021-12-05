@@ -1,0 +1,6 @@
+package com.Java.Training.Day8.Transaction;
+
+
+public enum ProductType{
+	FRUITS,GROCERIES,FUEL,ELECTRIC
+}

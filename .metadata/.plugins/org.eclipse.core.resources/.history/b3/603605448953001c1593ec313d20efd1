@@ -1,0 +1,8 @@
+package com.dnpass.training.java.day3.Day7.samples;
+
+public class CustomException extends Exception{
+
+	public CustomException(String str) {
+		super(str);
+	}
+}

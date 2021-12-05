@@ -1,0 +1,51 @@
+package com.Java.Training.Day8;
+
+import java.util.TreeSet;
+import java.util.Iterator;
+import java.util.Set;
+
+public class TreeSetDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		TreeSet<String> tset1 = new TreeSet<String>();
+		tset1.add("Blue");
+		tset1.add("Red");
+		tset1.add("Green");
+		tset1.add("Yellow");
+		tset1.add("Black");
+		tset1.add("White");
+		tset1.add("Grey");
+		System.out.println(tset1);
+		Iterator tset1Iter= tset1.iterator();
+		while(tset1Iter.hasNext()) {
+			System.out.print(tset1Iter.next()+" ");
+		}
+		System.out.println("\n");
+		Iterator tset1desc= tset1.descendingIterator();
+		while(tset1desc.hasNext()) {
+			System.out.print(tset1desc.next()+" ");
+		}
+		System.out.println("\n");
+		System.out.println("First :"+tset1.first());
+		System.out.println("last :"+tset1.last());
+		System.out.println("higher :"+tset1.higher("Red"));
+		System.out.println("lower :"+tset1.lower("Green"));
+		System.out.println("ceiling :"+tset1.ceiling("White"));
+		System.out.println("floor :"+tset1.floor("White"));
+		System.out.println("pollFirst :"+tset1.pollFirst());
+		System.out.println("pollLast :"+tset1.pollLast());
+		System.out.println("Subset :"+tset1.subSet("Blue", "Red"));
+		System.out.println("tailset :"+tset1.tailSet("Grey"));
+		System.out.println("headset :"+tset1.headSet("Grey"));
+		System.out.println("Contains :"+tset1.contains("Red"));
+		tset1.remove("Red");
+		System.out.println(tset1);
+		TreeSet<String> tset2 = new TreeSet<String>(tset1);
+		
+		tset2.add("Red");
+		tset2.add("Violet");
+		System.out.println(tset2);
+	}
+
+}

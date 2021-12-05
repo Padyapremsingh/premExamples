@@ -1,0 +1,7 @@
+package com.dnpass.training.java.day3.Day7.samples;
+
+public class UserdefinedException extends Exception{
+public UserdefinedException(String str) {
+	super(str);
+}
+}

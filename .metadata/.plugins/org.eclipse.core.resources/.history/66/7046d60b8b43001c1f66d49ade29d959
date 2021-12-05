@@ -1,0 +1,53 @@
+package day5Projects;
+import java.util.*;
+public class SumAndAvg {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int size,i;
+		int[] array1;
+		int[] array2;
+		int[] add;
+		int[] sub;
+		int[] mul;
+		int[] mod[];
+		float[] div;
+		System.out.println("Enter the Size of An Array : ");
+		Scanner sc=new Scanner(System.in);
+		size=sc.nextInt();
+		sc.close();
+		System.out.println("Size of the Array is : "+size);
+		System.out.println("Enter the Elements of 1st Array : ");
+		for(i=0;i<size;i++)
+		{
+			array1[i]=sc.nextInt();
+			sc.close();
+			
+		}
+		for(i=0;i<size;i++)
+		{
+			array1[i]=sc.nextInt();
+			sc.close();	
+		}
+		
+		for(i=0;i<size;i++)
+		{
+			add [i]= array1[i] + array2[i];
+		    sub [i]= array1[i] - array2[i];
+		    mul [i]= array1[i] * array2[i];
+		    div [i] = array1[i] / array2[i];
+		}
+		System.out.println("Add \t Sub \t Mul \t Div \t mod");
+		for(i=0;i<size;i++)
+		{
+			System.out.println("\n%d\t"+add[i]);
+			System.out.println("\n%d\t"+sub[i]);
+			System.out.println("\n%d\t"+mul[i]);
+			System.out.println("\n%d\t"+div[i]);
+			
+		}
+		
+		
+	}
+
+}

@@ -1,0 +1,24 @@
+package com.sample1;
+
+public class Operations {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a=5,b=8,c=6;
+		int total;
+		total = a+b*c;
+		int total1, total2,total3;
+		total1=(a+b)%c;
+		int d=20;
+		total2=a+(-b*c)/d;
+		total3=a+b/c*d-c%d;
+		System.out.println("The Total Value is : "+total);
+		System.out.println("The Total Value is : "+total1);
+		System.out.println("The Total Value is : "+total2);
+		System.out.println("The Total Value is : "+total3);
+		
+		
+
+	}
+
+}

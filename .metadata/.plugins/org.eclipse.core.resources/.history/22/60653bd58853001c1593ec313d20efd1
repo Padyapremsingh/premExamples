@@ -1,0 +1,64 @@
+package com.Java.Training.Day8;
+
+import java.util.*;
+
+//import javax.swing.text.html.HTMLDocument.Iterator;
+
+public class ArrayListDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<String> colors=new ArrayList<String>();
+		//add elements to the arraylist
+		colors.add("Blue");
+		colors.add("Red");
+		colors.add("Green");
+		colors.add("Yellow");
+		colors.add("Black");
+		colors.add(0, "White");
+		
+		//prints arraylist
+		System.out.println(colors);
+		
+		//using iterator to print array list
+		Iterator clrIter = colors.iterator();
+		while(clrIter.hasNext())
+			System.out.print(clrIter.next() + " ");
+		
+		//print single element of given index
+		System.out.println("\n"+colors.get(1));
+		colors.add("brown");
+		System.out.println(colors);
+		colors.set(6,"Brown");
+		System.out.println(colors);
+		//colors.remove(1);
+		
+		ArrayList<String> colors1=new ArrayList<String>();
+		colors1.addAll(colors);
+		colors.removeAll(colors1);
+		System.out.println(colors+" "+colors1);
+		Collections.sort(colors1);
+		System.out.println(colors1);
+		Collections.copy(colors1, colors);
+		System.out.println(colors);
+		Collections.shuffle(colors1);
+		System.out.println(colors1);
+		Collections.swap(colors1,0,1);
+		System.out.println(colors1);
+		
+		
+		Set<String> hset1=new HashSet<String>(colors1);
+		System.out.println("Hset "+hset1);
+		
+		Set<String> tset1=new TreeSet<String>(colors1);
+		System.out.println("tset "+tset1);
+		
+		LinkedList<String> ll1= new LinkedList<String>(colors1);
+		System.out.println("Liked list :"+ll1);
+		
+		ArrayList<String> c1=(ArrayList<String>) colors1.clone();
+		c1.ensureCapacity(10); // capacity increased to 10
+		
+	}
+
+}

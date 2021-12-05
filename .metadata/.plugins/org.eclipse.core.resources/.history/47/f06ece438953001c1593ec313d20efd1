@@ -1,0 +1,6 @@
+package com.dnpass.training.java.day3.Day8.samples.Transaction;
+
+
+public enum ProductType{
+	FRUITS,GROCERIES,FUEL,ELECTRIC
+}

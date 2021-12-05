@@ -1,0 +1,7 @@
+package com.Java.Training.Day6.Samples.Calculator;
+
+public interface AdvancedArithmetic {
+	static int divisor_sum(int n) {
+		return 0;
+	}
+}

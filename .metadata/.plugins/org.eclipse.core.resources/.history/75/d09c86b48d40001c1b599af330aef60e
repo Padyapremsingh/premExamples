@@ -1,0 +1,17 @@
+package com.sample1;
+import java.util.*;
+public class Swapping {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a,b;
+		Scanner premsingh = new Scanner(System.in);
+		System.out.println("Enter the Value of A : ");
+		a=premsingh.nextInt();
+		System.out.println("Enter the Value of B : ");
+		b=premsingh.nextInt();
+		
+		
+	}
+
+}

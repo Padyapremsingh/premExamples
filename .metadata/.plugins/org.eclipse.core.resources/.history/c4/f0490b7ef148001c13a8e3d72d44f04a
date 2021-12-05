@@ -1,0 +1,77 @@
+package day0Projects;
+import java.util.*;
+import java.lang.Iterable;
+public class BreakAndContinue {
+
+	public static void main(String[] args) {
+		
+		int a,i;
+		System.out.println("Enter the Number... ! : ");
+		Scanner sc=new Scanner(System.in);
+		a=sc.nextInt();
+		for(i=0;i<=a;i++)
+		{
+			System.out.println(i);
+			if(i==2)
+			{
+				System.out.println(" Continued at : "+i);
+				continue;
+			}
+			if(i==a)
+			{
+				
+			}
+		}
+		//positive Numbers
+		//use for-each loop and break, continue stmts
+		//Enter the Size of the Array 
+		/*int size;
+		System.out.println("Enter the Size of the Array ...!");
+		Scanner sc=new Scanner(System.in);
+		size=sc.nextInt();
+		int [] array=new int[size];
+		System.out.println("Insert Positive Values ...!");
+		for(int i=0;i<size;i++)
+		{
+			array[size]=sc.nextInt();
+			System.out.println("Entered value is Positive ...!");
+			if(array[size]<0)
+			{
+				System.out.println("Entered value is Negative ...!");
+				continue;
+			}
+			if(array==0)
+			{
+				System.out.println("Entered value is Invalid ...!");
+				break;
+			}
+			
+			System.out.println("Entered value is Positive ...!");
+			
+		}
+		
+		kamalraj.krish
+
+		
+		int hoursNeeded = 5;
+		int hoursAvailable = 5;
+		int hoursRemaining;
+
+		if(hoursAvailable > 0) {
+		  hoursRemaining = hoursAvailable - hoursNeeded;
+		  if(hoursRemaining < 0) {
+			 System.out.println("Not enough time.");
+		  } else {
+		    String suffix = "";
+		    if(hoursRemaining != 1) {
+			    suffix = "s";
+		    }
+
+		    System.out.println("You will have " + hoursRemaining + " hour" + suffix + " remaining.");
+		  }
+		} else {
+		 System.out.println("Times up.");
+		}
+*/
+	}
+}
